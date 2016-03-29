@@ -10,7 +10,7 @@ character-set-server=utf8
 [mysqld_safe]
 log-error=/var/log/mysqld.log
 pid-file=/var/run/mysqld/mysqld.pid
-' > /etc/my.cnf
+'> /etc/my.cnf
 service restart mysqld
 git clone https://github.com/shinhwagk/gkbase-beta-data
 mysql g_note < /tmp/gkbase-beta-data/g_note.bak.sql
