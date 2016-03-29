@@ -38,7 +38,7 @@ CREATE TABLE `category` (
   `updatedata` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `category_father_id` (`father_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,7 +47,7 @@ CREATE TABLE `category` (
 
 LOCK TABLES `category` WRITE;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
-INSERT INTO `category` VALUES (1,'oracle',0,'2016-03-28 23:01:36','2016-03-28 23:01:36'),(2,'test',0,'2016-03-28 23:07:51','2016-03-28 23:07:51'),(3,'???',1,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(4,'play',0,'2016-03-28 23:18:02','2016-03-28 23:18:02'),(5,'mysql',0,'2016-03-28 23:19:13','2016-03-28 23:19:13'),(6,'backup & recovery',5,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(7,'backup',6,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(8,'mysqldump',7,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(9,'github',0,'2016-03-28 23:36:38','2016-03-28 23:36:38'),(10,'perl6',0,'2016-03-29 00:40:22','2016-03-29 00:40:22'),(11,'测试中文',2,'2016-03-28 00:00:00','2016-03-28 00:00:00');
+INSERT INTO `category` VALUES (1,'oracle',0,'2016-03-28 23:01:36','2016-03-28 23:01:36'),(2,'test',0,'2016-03-28 23:07:51','2016-03-28 23:07:51'),(3,'???',1,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(4,'play',0,'2016-03-28 23:18:02','2016-03-28 23:18:02'),(5,'mysql',0,'2016-03-28 23:19:13','2016-03-28 23:19:13'),(6,'backup & recovery',5,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(7,'backup',6,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(8,'mysqldump',7,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(9,'github',0,'2016-03-28 23:36:38','2016-03-28 23:36:38'),(10,'perl6',0,'2016-03-29 00:40:22','2016-03-29 00:40:22'),(11,'测试中文',2,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(12,'linux',0,'2016-03-29 00:46:38','2016-03-29 00:46:38'),(13,'command',12,'2016-03-28 00:00:00','2016-03-28 00:00:00'),(14,'file',13,'2016-03-28 00:00:00','2016-03-28 00:00:00');
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -69,7 +69,7 @@ CREATE TABLE `content` (
   PRIMARY KEY (`id`),
   KEY `category_id` (`category_id`),
   KEY `document_id` (`document_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -78,7 +78,7 @@ CREATE TABLE `content` (
 
 LOCK TABLES `content` WRITE;
 /*!40000 ALTER TABLE `content` DISABLE KEYS */;
-INSERT INTO `content` VALUES (1,'test','test',2,'2016-03-28 23:08:22','2016-03-28 23:08:22',NULL),(2,'mysqldump --databases g_note > g_note.dmp.bak',' ',8,'2016-03-28 00:00:00','2016-03-28 00:00:00',NULL);
+INSERT INTO `content` VALUES (1,'test','test',2,'2016-03-28 23:08:22','2016-03-28 23:08:22',NULL),(2,'mysqldump --databases g_note > g_note.dmp.bak',' ',8,'2016-03-28 00:00:00','2016-03-28 00:00:00',NULL),(3,'file -i','-i 查看文件字符集',14,'2016-03-28 00:00:00','2016-03-28 00:00:00',NULL);
 /*!40000 ALTER TABLE `content` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -117,4 +117,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-29  0:44:46
+-- Dump completed on 2016-03-29 20:56:21
