@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: g_note
 -- ------------------------------------------------------
--- Server version	5.1.73
+-- Server version	5.1.73-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -117,4 +117,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-29 20:56:21
+-- Dump completed on 2016-03-29 21:40:05
