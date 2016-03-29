@@ -1,3 +1,5 @@
+## Centos 6.7
+
 ### init
 ```shell
 cd /tmp
