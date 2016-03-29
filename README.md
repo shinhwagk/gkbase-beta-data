@@ -16,6 +16,10 @@ service restart mysqld
 
 ### app note
 ```shell
+cd /tmp
+mysql <<EOF
+create database g_note;
+EOF
 git clone https://github.com/shinhwagk/gkbase-beta-data
-mysql g_note < /tmp/gkbase-beta-data/g_note.bak.sql
+mysql -Dg_note </tmp/gkbase-beta-data/g_note.bak.sql 
 ```
