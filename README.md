@@ -1,3 +1,4 @@
+### init
 ```shell
 cd /tmp
 yum install -y git mysql-server
