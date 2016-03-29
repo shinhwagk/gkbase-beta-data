@@ -11,3 +11,8 @@ conid=$(docker run \
 ```shell
 docker exec $conid cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
+
+####3.下载数据
+```shell
+git clone https://github.com/shinhwagk/gkbase-beta-data
+```
