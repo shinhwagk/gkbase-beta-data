@@ -1,7 +1,10 @@
 #!/bin/bash
 
+
 TIME=`date +%Y%m%d%H%M%S`
 cd /opt/gkbase-beta-data
+
+mysqldump --databases g_note > g_note_$TIME.bak.sql
 git pull
 git add --all
 git commit -m "$TIME"
