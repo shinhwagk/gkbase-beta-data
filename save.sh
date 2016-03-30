@@ -6,4 +6,7 @@ git pull
 git add --all
 git commit -m "$TIME"
 echo $?
-echo $TIME
+if [[ $? == 0 ]];then
+  git push
+  echo 'adfd'
+fi
