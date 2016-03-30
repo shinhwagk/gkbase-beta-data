@@ -8,6 +8,9 @@ git commit -m "$TIME"
 echo $?
 if [[ $? == 0 ]];then
   git push
+  echo '1111'
+  echo $? 
+  echo  '1111'
   echo 'ok'
 else
   echo error
