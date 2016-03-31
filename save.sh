@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-TIME=`date +%Y%m%d%H%M%S`
+TIME=`date +%Y%m%d%H`
 cd /opt/gkbase-beta-data
 
 mysqldump --databases g_note > g_note_$TIME.bak.sql
